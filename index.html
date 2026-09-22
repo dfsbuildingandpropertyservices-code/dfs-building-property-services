@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DFS Building & Property Services</title>
+<meta name="description" content="DFS Building & Property Services — quality building, maintenance and property services.">
+<style>
+:root{--gold:#ff6a00;--ink:#0e151d;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--white);background:var(--ink)}
+.top{background:#101821;text-align:center;padding:20px 18px;font-size:clamp(15px,2.2vw,24px)}
+nav{position:absolute;z-index:3;top:62px;left:0;right:0;padding:24px clamp(24px,5vw,70px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff33}
+.logo{display:flex;align-items:center;gap:20px}.mark{width:72px;height:72px;border:3px solid var(--gold);display:grid;place-items:center;font-size:25px;font-weight:800}
+.name{font-weight:800;font-size:32px;letter-spacing:4px}.sub{color:var(--gold);font-size:15px;letter-spacing:3px;margin-top:4px}
+.btn{background:var(--gold);color:#fff;padding:19px 28px;text-decoration:none;font-weight:800;font-size:17px;display:inline-block}
+.hero{min-height:100vh;position:relative;background-image:linear-gradient(90deg,rgba(8,15,22,.96) 0%,rgba(8,15,22,.78) 40%,rgba(8,15,22,.15) 100%),url("hero.jpg");background-size:cover;background-position:center}
+.content{position:relative;z-index:2;max-width:900px;padding:clamp(220px,30vh,340px) 7vw 100px}
+.eyebrow{color:var(--gold);font-weight:800;letter-spacing:5px;font-size:clamp(16px,2vw,24px);line-height:1.7}
+h1{font-size:clamp(52px,8vw,100px);line-height:.96;margin:28px 0;font-weight:800;letter-spacing:-3px}
+.lead{font-size:clamp(19px,2.4vw,29px);line-height:1.55;max-width:800px}
+.actions{display:flex;gap:18px;flex-wrap:wrap;margin-top:42px}.outline{border:2px solid white;color:white;padding:18px 28px;text-decoration:none;font-weight:800;font-size:17px}
+section{background:#0b0b0b;color:#fff;padding:90px 7vw}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1200px;margin:auto}
+.card{background:#171717;padding:35px;box-shadow:0 8px 30px #00000012}.card h3{font-size:24px;margin-top:0}.card p{line-height:1.6;color:#cfcfcf}
+footer{background:#080808;padding:45px 7vw;display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}
+@media(max-width:700px){nav{top:58px;padding:18px 24px}.name{font-size:25px}.mark{width:62px;height:62px}.sub{font-size:11px}.navbtn{padding:14px 15px;font-size:14px}.content{padding-top:250px}h1{letter-spacing:-2px}.grid{grid-template-columns:1fr}section{padding:65px 7vw}}
+</style>
+
+<style>
+@media(max-width:700px){
+  #why-choose h2{font-size:52px!important}
+  #why-choose article{padding:34px 28px!important}
+  #why-choose article h3{font-size:28px!important}
+  #why-choose article p{font-size:22px!important;line-height:1.4}
+}
+</style>
+
+</head>
+<body>
+<div class="top">Serving homes and businesses across North Yorkshire</div>
+<nav>
+  <div class="logo">
+    <div class="mark">DFS</div>
+    <div><div class="name">DFS</div><div class="sub">BUILDING &amp; PROPERTY SERVICES</div></div>
+  </div>
+  <a class="btn navbtn" href="tel:07873875190">Call 07873 875190</a>
+</nav>
+
+<main class="hero">
+  <div class="content">
+    <div class="eyebrow">BUILDING &amp; PROPERTY SERVICES</div>
+    <h1>Built properly.<br>Made to last.</h1>
+    <p class="lead">Quality building, property maintenance, paving, roofing, brickwork and fencing — delivered with care and attention to detail.</p>
+    <div class="actions">
+      <a class="btn" href="tel:07873875190">Call 07873 875190</a>
+      <a class="outline" href="#services">View our services</a>
+    </div>
+  </div>
+</main>
+
+
+<section id="about" style="background:#f5f2eb;color:#111;padding:100px 7vw">
+  <div style="max-width:1050px;margin:auto">
+    <div class="eyebrow" style="color:#ff6a00">DFS BUILDING &amp; PROPERTY SERVICES</div>
+    <h2 style="font-size:clamp(46px,7vw,82px);line-height:1.02;margin:28px 0;letter-spacing:-3px;color:#ff6a00">
+      One trusted contractor<br>for your property.
+    </h2>
+    <p style="font-size:clamp(20px,2.5vw,30px);line-height:1.55;color:#505b64;max-width:1000px;margin:0">
+      From a smart new driveway or secure boundary fence to essential roof repairs and skilled brickwork, DFS offers a straightforward, dependable service. Every project is approached with attention to detail, tidy workmanship and respect for your property.
+    </p>
+  </div>
+</section>
+
+
+<section id="why-choose" style="background:#101820;color:#fff;padding:100px 7vw">
+  <div style="max-width:1200px;margin:auto">
+    <div class="eyebrow" style="color:#ff6a00">WHY CHOOSE DFS</div>
+    <h2 style="font-size:clamp(46px,7vw,82px);line-height:1.02;margin:28px 0;letter-spacing:-3px;color:#fff">
+      Local workmanship you<br>can rely on.
+    </h2>
+    <p style="font-size:clamp(20px,2.5vw,30px);line-height:1.55;max-width:1000px;color:#d2d7db;margin:0 0 65px">
+      Clear communication from the first conversation to final completion, with a focus on durable results and a tidy finish.
+    </p>
+    <div style="display:grid;grid-template-columns:1fr;gap:28px;max-width:1100px">
+      <article style="border:2px solid #3b4750;padding:42px 38px;background:#101820">
+        <h3 style="color:#ff6a00;font-size:32px;margin:0 0 25px">Qualified trade</h3>
+        <p style="color:#fff;font-size:26px;margin:0">Skilled bricklaying expertise</p>
+      </article>
+      <article style="border:2px solid #3b4750;padding:42px 38px;background:#101820">
+        <h3 style="color:#ff6a00;font-size:32px;margin:0 0 25px">Versatile service</h3>
+        <p style="color:#fff;font-size:26px;margin:0">Four core property trades</p>
+      </article>
+      <article style="border:2px solid #3b4750;padding:42px 38px;background:#101820">
+        <h3 style="color:#ff6a00;font-size:32px;margin:0 0 25px">Local coverage</h3>
+        <p style="color:#fff;font-size:26px;margin:0">Across North Yorkshire</p>
+      </article>
+      <article style="border:2px solid #3b4750;padding:42px 38px;background:#101820">
+        <h3 style="color:#ff6a00;font-size:32px;margin:0 0 25px">Personal approach</h3>
+        <p style="color:#fff;font-size:26px;margin:0">Deal directly with DFS</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section id="services" style="background:#101820;color:#fff;padding:100px 7vw">
+  <div style="max-width:1200px;margin:auto">
+    <div class="eyebrow" style="color:#ff6a00">WHAT WE DO</div>
+    <h2 style="font-size:clamp(46px,7vw,82px);line-height:1.02;margin:28px 0;letter-spacing:-3px;color:#fff">
+      Quality work, built around<br>your home.
+    </h2>
+    <p style="font-size:clamp(20px,2.5vw,30px);line-height:1.55;max-width:1000px;color:#cbd2d8;margin:0 0 60px">
+      A complete range of building and property services, delivered with care across North Yorkshire.
+    </p>
+
+    <div style="display:grid;grid-template-columns:1fr;gap:28px">
+      <article style="border:1px solid #3b4750;border-top:7px solid #ff6a00;padding:36px 38px;background:#141c23">
+        <div style="color:#7d8993;font-size:25px;font-weight:800;margin-bottom:24px">01</div>
+        <h3 style="color:#ff6a00;font-size:34px;margin:0 0 22px">Driveways &amp; Paving</h3>
+        <p style="color:#cbd2d8;font-size:23px;line-height:1.55;margin:0">Driveways, patios, paths and hard landscaping using block, stone and slab finishes.</p>
+      </article>
+
+      <article style="border:1px solid #3b4750;border-top:7px solid #ff6a00;padding:36px 38px;background:#141c23">
+        <div style="color:#7d8993;font-size:25px;font-weight:800;margin-bottom:24px">02</div>
+        <h3 style="color:#ff6a00;font-size:34px;margin:0 0 22px">Roofing</h3>
+        <p style="color:#cbd2d8;font-size:23px;line-height:1.55;margin:0">Roof repairs, tile replacement, maintenance and dependable weatherproofing work.</p>
+      </article>
+
+      <article style="border:1px solid #3b4750;border-top:7px solid #ff6a00;padding:36px 38px;background:#141c23">
+        <div style="color:#7d8993;font-size:25px;font-weight:800;margin-bottom:24px">03</div>
+        <h3 style="color:#ff6a00;font-size:34px;margin:0 0 22px">Brickwork</h3>
+        <p style="color:#cbd2d8;font-size:23px;line-height:1.55;margin:0">Qualified bricklaying for walls, repairs, alterations and new construction projects.</p>
+      </article>
+
+      <article style="border:1px solid #3b4750;border-top:7px solid #ff6a00;padding:36px 38px;background:#141c23">
+        <div style="color:#7d8993;font-size:25px;font-weight:800;margin-bottom:24px">04</div>
+        <h3 style="color:#ff6a00;font-size:34px;margin:0 0 22px">Fencing</h3>
+        <p style="color:#cbd2d8;font-size:23px;line-height:1.55;margin:0">Strong, well-finished garden and boundary fencing, including repairs and replacement.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section id="areas" style="background:#0b0b0b;color:#fff;padding:100px 7vw">
+  <div style="max-width:1200px;margin:auto">
+    <div class="eyebrow" style="color:#ff6a00">AREAS WE COVER</div>
+    <h2 style="font-size:clamp(46px,7vw,82px);line-height:1.02;margin:28px 0;letter-spacing:-3px;color:#fff">
+      Local service across<br>North Yorkshire.
+    </h2>
+    <p style="font-size:clamp(20px,2.5vw,30px);line-height:1.55;max-width:900px;color:#cbd2d8;margin:0 0 55px">
+      DFS Building &amp; Property Services covers homes and businesses across North Yorkshire and surrounding villages.
+    </p>
+    <div class="grid" style="margin-top:0">
+      <article class="card"><h3 style="color:#ff6a00">Ripon</h3><p>Building and property services across Ripon and nearby areas.</p></article>
+      <article class="card"><h3 style="color:#ff6a00">Thirsk</h3><p>Reliable building, maintenance and groundwork services across Thirsk.</p></article>
+      <article class="card"><h3 style="color:#ff6a00">Boroughbridge</h3><p>Quality building and property services for Boroughbridge and surrounding communities.</p></article>
+      <article class="card"><h3 style="color:#ff6a00">York</h3><p>Serving domestic and commercial customers across York and nearby areas.</p></article>
+      <article class="card"><h3 style="color:#ff6a00">Harrogate</h3><p>Building, property maintenance and exterior services throughout Harrogate.</p></article>
+      <article class="card"><h3 style="color:#ff6a00">Surrounding Villages</h3><p>We also cover surrounding villages. Call us to discuss your location and project.</p></article>
+    </div>
+    <div style="margin-top:45px">
+      <a class="btn" href="tel:07873875190">Call 07873 875190</a>
+    </div>
+  </div>
+</section>
+
+<section id="quote" style="background:#ff6a00;color:#fff">
+  <div style="max-width:900px;margin:auto">
+    <h2 style="font-size:clamp(38px,6vw,70px);margin:0 0 15px">Ready to get started?</h2>
+    <p style="font-size:21px;line-height:1.5">Tell us what you need and we'll arrange a free quote.</p>
+    <a class="outline" style="border-color:#fff;color:#fff" href="tel:07873875190">Call 07873 875190</a>
+  </div>
+</section>
+<footer><strong>DFS Building & Property Services</strong><span>Building &amp; Property Services</span></footer>
+</body>
+</html>
